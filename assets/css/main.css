@@ -3,6 +3,25 @@
     --mainfont:"Open Sans", sans-serif;
 }
 
+
+@media (min-width: 576px) {  }
+
+@media (min-width: 768px) {  }
+
+@media (min-width: 992px) {  }
+
+@media (min-width: 1200px) {
+    .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+        max-width: 1190px;
+    }
+  }
+
+@media (min-width: 1400px) { 
+    .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+        max-width: 1395px;
+    }
+ }
+
 body{
     font-family: var(--mainfont);
 }
@@ -18,6 +37,12 @@ body{
 .hero{
     background-image: url("/assets/images/me.jpg");
     background-size: cover;
+}
+
+.slider .carousel-indicators [data-bs-target]{
+    background-color: var(--primary-color);
+    height: 30px;
+    border-radius: 50%;
 }
 
 .text-primary{
